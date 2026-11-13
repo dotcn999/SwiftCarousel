@@ -1,0 +1,57 @@
+name: SwiftCarouselDemo
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+packages:
+  SwiftCarousel:
+    path: ..
+
+targets:
+  SwiftCarouselDemo:
+    type: application
+    platform: iOS
+    sources:
+      - path: SwiftCarouselDemo
+    dependencies:
+      - package: SwiftCarousel
+        product: SwiftCarousel
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.SwiftCarouselDemo
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+
+  SwiftCarouselDemoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SwiftCarouselDemoUITests
+    dependencies:
+      - target: SwiftCarouselDemo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.SwiftCarouselDemoUITests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "6.0"
+
+schemes:
+  SwiftCarouselDemo:
+    build:
+      targets:
+        SwiftCarouselDemo: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - SwiftCarouselDemoUITests

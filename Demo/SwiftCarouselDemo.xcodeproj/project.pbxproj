@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		304912BF8E3A387E738C6F03 /* SwiftCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 420F6F5C39D96095E724E83B /* SwiftCarousel */; };
+		7C9704223621A5F8AF880586 /* SwiftCarouselDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A12C780F65E79DD642DD6C /* SwiftCarouselDemoApp.swift */; };
+		90084EA2C0D504FA63DCCE64 /* SwiftCarouselDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00E85147B40B04D17D62578 /* SwiftCarouselDemoUITests.swift */; };
+		E90FF0A1D2818E326676EDAA /* DemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D63D5875EC9A20CF2C6EEE3 /* DemoContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456C367F22D86EBAD219740E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1FEA37D96A673728565E76D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D00D97B2D5C15A04E0FA0E;
+			remoteInfo = SwiftCarouselDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D63D5875EC9A20CF2C6EEE3 /* DemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoContentView.swift; sourceTree = "<group>"; };
+		815EF406585CA7E8FD7AA8C1 /* SwiftCarousel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftCarousel; path = ..; sourceTree = SOURCE_ROOT; };
+		92A12C780F65E79DD642DD6C /* SwiftCarouselDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCarouselDemoApp.swift; sourceTree = "<group>"; };
+		984C7576BA103E9E51F14AA0 /* SwiftCarouselDemoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SwiftCarouselDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00E85147B40B04D17D62578 /* SwiftCarouselDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCarouselDemoUITests.swift; sourceTree = "<group>"; };
+		E39373BF9E40558CD8C98540 /* SwiftCarouselDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SwiftCarouselDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4192405402160D67498ADD51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304912BF8E3A387E738C6F03 /* SwiftCarousel in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C33D214ED5F4A48162FECAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E39373BF9E40558CD8C98540 /* SwiftCarouselDemo.app */,
+				984C7576BA103E9E51F14AA0 /* SwiftCarouselDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368517569F51D441EDB5C454 /* SwiftCarouselDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7D63D5875EC9A20CF2C6EEE3 /* DemoContentView.swift */,
+				92A12C780F65E79DD642DD6C /* SwiftCarouselDemoApp.swift */,
+			);
+			path = SwiftCarouselDemo;
+			sourceTree = "<group>";
+		};
+		4E6323E309705C4842E419FB = {
+			isa = PBXGroup;
+			children = (
+				68EA1BBCC266F7FC7CBB30F2 /* Packages */,
+				368517569F51D441EDB5C454 /* SwiftCarouselDemo */,
+				5ED2D00F8928D6715F1F2687 /* SwiftCarouselDemoUITests */,
+				2C33D214ED5F4A48162FECAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ED2D00F8928D6715F1F2687 /* SwiftCarouselDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A00E85147B40B04D17D62578 /* SwiftCarouselDemoUITests.swift */,
+			);
+			path = SwiftCarouselDemoUITests;
+			sourceTree = "<group>";
+		};
+		68EA1BBCC266F7FC7CBB30F2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				815EF406585CA7E8FD7AA8C1 /* SwiftCarousel */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D00D97B2D5C15A04E0FA0E /* SwiftCarouselDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4433202EFDBE47DDBE8F598C /* Build configuration list for PBXNativeTarget "SwiftCarouselDemo" */;
+			buildPhases = (
+				AB4B18B699D7A0D9B94655A7 /* Sources */,
+				4192405402160D67498ADD51 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCarouselDemo;
+			packageProductDependencies = (
+				420F6F5C39D96095E724E83B /* SwiftCarousel */,
+			);
+			productName = SwiftCarouselDemo;
+			productReference = E39373BF9E40558CD8C98540 /* SwiftCarouselDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		259E21AF9A4E48CC46850FE3 /* SwiftCarouselDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C627F746209F7126B1375F /* Build configuration list for PBXNativeTarget "SwiftCarouselDemoUITests" */;
+			buildPhases = (
+				536F80A1DEE5DDE5EDC340BC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B348C6A2376B65C61C0A11D /* PBXTargetDependency */,
+			);
+			name = SwiftCarouselDemoUITests;
+			packageProductDependencies = (
+			);
+			productName = SwiftCarouselDemoUITests;
+			productReference = 984C7576BA103E9E51F14AA0 /* SwiftCarouselDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1FEA37D96A673728565E76D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					259E21AF9A4E48CC46850FE3 = {
+						TestTargetID = 20D00D97B2D5C15A04E0FA0E;
+					};
+				};
+			};
+			buildConfigurationList = 5062C11D38B38A00B5762EF4 /* Build configuration list for PBXProject "SwiftCarouselDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E6323E309705C4842E419FB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4223E82E63CF3F3C4790D3D /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2C33D214ED5F4A48162FECAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20D00D97B2D5C15A04E0FA0E /* SwiftCarouselDemo */,
+				259E21AF9A4E48CC46850FE3 /* SwiftCarouselDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		536F80A1DEE5DDE5EDC340BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90084EA2C0D504FA63DCCE64 /* SwiftCarouselDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB4B18B699D7A0D9B94655A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90FF0A1D2818E326676EDAA /* DemoContentView.swift in Sources */,
+				7C9704223621A5F8AF880586 /* SwiftCarouselDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B348C6A2376B65C61C0A11D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D00D97B2D5C15A04E0FA0E /* SwiftCarouselDemo */;
+			targetProxy = 456C367F22D86EBAD219740E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CF481C0A85E2D7DC5BB705C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftCarouselDemoUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftCarouselDemo;
+			};
+			name = Debug;
+		};
+		567C5BAB47E2E3F858201AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftCarouselDemo;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57FAA0BD9F1BEE948859C3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftCarouselDemo;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E61E853E8FF0F606794FBD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E8DB6A681D64C805C09806E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SwiftCarouselDemoUITests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftCarouselDemo;
+			};
+			name = Release;
+		};
+		F5414108FB2A7DA8F966358A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4433202EFDBE47DDBE8F598C /* Build configuration list for PBXNativeTarget "SwiftCarouselDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567C5BAB47E2E3F858201AFA /* Debug */,
+				57FAA0BD9F1BEE948859C3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5062C11D38B38A00B5762EF4 /* Build configuration list for PBXProject "SwiftCarouselDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5414108FB2A7DA8F966358A /* Debug */,
+				E61E853E8FF0F606794FBD44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77C627F746209F7126B1375F /* Build configuration list for PBXNativeTarget "SwiftCarouselDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF481C0A85E2D7DC5BB705C /* Debug */,
+				E8DB6A681D64C805C09806E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D4223E82E63CF3F3C4790D3D /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		420F6F5C39D96095E724E83B /* SwiftCarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftCarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C1FEA37D96A673728565E76D /* Project object */;
+}

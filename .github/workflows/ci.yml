@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select an available iPhone simulator
+        id: simulator
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          iphones = [d for runtime in devices.values() for d in runtime if d["name"].startswith("iPhone")]
+          print(iphones[0]["udid"])
+          ')
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+
+      - name: Run package tests
+        run: |
+          xcodebuild test \
+            -scheme SwiftCarousel \
+            -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" \
+            -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Build demo app
+        run: |
+          xcodebuild build \
+            -project Demo/SwiftCarouselDemo.xcodeproj \
+            -scheme SwiftCarouselDemo \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath "$RUNNER_TEMP/DemoDerivedData" \
+            CODE_SIGNING_ALLOWED=NO
