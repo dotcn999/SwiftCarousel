@@ -1,0 +1,85 @@
+name: Bug report
+description: Report a layout, scrolling, gesture or integration problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include enough detail to reproduce it.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the actual and expected behaviour.
+      placeholder: The carousel jumps when wrapping from the last item to the first.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include code, demo launch arguments and a video or screenshots if possible.
+      placeholder: |
+        1. Run the demo with -demoType 3 -demoIndex 4
+        2. Drag left slowly and release
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layout
+    attributes:
+      label: Layout type
+      options:
+        - Linear
+        - Rotary
+        - Inverted Rotary
+        - Cylinder
+        - Inverted Cylinder
+        - Wheel
+        - Inverted Wheel
+        - Cover Flow
+        - Cover Flow 2
+        - Time Machine
+        - Inverted Time Machine
+        - Custom
+        - Not layout-specific
+    validations:
+      required: true
+
+  - type: input
+    id: options
+    attributes:
+      label: Relevant options
+      description: Option values passed through CarouselDelegate or the SwiftUI options dictionary.
+      placeholder: "spacing: 0.8, arc: 3.14, wrap: 1"
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Xcode, Swift, iOS and device or simulator.
+      placeholder: "Xcode 16.4, Swift 6, iOS 18.5, iPhone 16 Pro simulator"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Integration
+      options:
+        - SwiftUI
+        - UIKit
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash reports
+      description: Paste any relevant console output, backtraces or crash logs.
+      render: shell

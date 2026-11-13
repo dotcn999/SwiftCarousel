@@ -17,7 +17,10 @@ public protocol CarouselDataSource: AnyObject {
 
     /// Returns a view for the given index.
     ///
-    /// - Parameter reusing: A view previously returned to the reuse pool, or `nil`.
+    /// - Parameters:
+    ///   - carousel: The carousel requesting the view.
+    ///   - index: The index of the item to display.
+    ///   - view: A view previously returned to the reuse pool, or `nil`.
     func carousel(_ carousel: CarouselView, viewForItemAt index: Int, reusing view: UIView?) -> UIView
 
     func numberOfPlaceholders(in carousel: CarouselView) -> Int

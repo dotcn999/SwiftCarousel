@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new layout, option, API or integration
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the use case first. Proposed API details are welcome but optional.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to build, and what is missing today?
+      placeholder: I need a carousel that follows a custom path defined by a CGPath.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the API or behaviour you would like.
+      placeholder: Add a path-based transform option through the delegate.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing options, workarounds or other libraries you tried.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Layout or transform
+        - Scrolling physics
+        - SwiftUI wrapper
+        - UIKit API
+        - Documentation
+        - Demo app
+    validations:
+      required: true
