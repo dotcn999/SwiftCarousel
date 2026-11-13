@@ -3,7 +3,7 @@
 [![CI](https://github.com/dotcn999/SwiftCarousel/actions/workflows/ci.yml/badge.svg)](https://github.com/dotcn999/SwiftCarousel/actions/workflows/ci.yml)
 [![Swift 6](https://img.shields.io/badge/swift-6.0-orange.svg)](https://swift.org)
 [![iOS 16+](https://img.shields.io/badge/platform-iOS%2016%2B-blue.svg)](#要求)
-[![License: zlib](https://img.shields.io/badge/license-zlib-lightgrey.svg)](LICENCE.md)
+[![License: zlib](https://img.shields.io/badge/license-zlib-lightgrey.svg)](LICENSE.md)
 
 [iCarousel](https://github.com/nicklockwood/iCarousel) 1.8.3 的现代 Swift 重写版：UIKit 负责 3D 布局与滚动物理，SwiftUI 封装负责声明式接入。保留原有 12 种布局、视图复用、占位视图、循环滚动、拖拽惯性、自动滚动和增删刷新能力。
 
@@ -162,4 +162,4 @@ xcodebuild test -scheme SwiftCarousel \
 
 ## 许可
 
-沿用原项目的 zlib 许可证，详见 [LICENCE.md](LICENCE.md)。原始实现版权归 Nick Lockwood 所有。
+沿用原项目的 zlib 许可证，详见 [LICENSE.md](LICENSE.md)。原始实现版权归 Nick Lockwood 所有。
