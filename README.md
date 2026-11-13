@@ -95,6 +95,15 @@ func carousel(_ carousel: CarouselView, viewForItemAt index: Int, reusing view: 
 
 布局细节可通过 `CarouselOption` 调整：`wrap`、`showBackfaces`、`offsetMultiplier`、`visibleItems`、`count`、`arc`、`angle`、`radius`、`tilt`、`spacing`、`fadeMin`、`fadeMax`、`fadeRange`、`fadeMinAlpha`。
 
+## 文档
+
+包内附带 DocC 目录，在 Xcode 中通过 `Product > Build Documentation` 查看，或阅读仓库中的 [文档源码](Sources/SwiftCarousel/SwiftCarousel.docc)：
+
+- [GettingStarted](Sources/SwiftCarousel/SwiftCarousel.docc/GettingStarted.md)：SwiftUI 与 UIKit 接入
+- [Layouts](Sources/SwiftCarousel/SwiftCarousel.docc/Layouts.md)：12 种布局与自定义 transform
+- [Options](Sources/SwiftCarousel/SwiftCarousel.docc/Options.md)：可调参数一览
+- [MigrationFromICarousel](Sources/SwiftCarousel/SwiftCarousel.docc/MigrationFromICarousel.md)：从 iCarousel 迁移
+
 ## 要求
 
 - Xcode 16 或更高版本（Swift 6 工具链）
@@ -146,7 +155,7 @@ xcodebuild test -project SwiftCarouselDemo.xcodeproj -scheme SwiftCarouselDemo \
 
 ## 贡献
 
-欢迎提交 Issue 和 Pull Request。修改后请确保以下命令通过：
+欢迎提交 Issue 和 Pull Request，详细流程与代码风格见 [CONTRIBUTING.md](CONTRIBUTING.md)。修改后请确保以下命令通过：
 
 ```bash
 xcodebuild test -scheme SwiftCarousel \
